@@ -27,5 +27,8 @@ An intelligent crop recommendation system that analyzes soil data and provides t
 ## 📦 Installation
 ```bash
 pip install -r requirements.txt
-python app.py
 
+##Execution
+```bash
+python app.py
+index.html(open with live server)
