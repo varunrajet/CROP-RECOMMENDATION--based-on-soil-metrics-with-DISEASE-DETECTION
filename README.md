@@ -24,11 +24,9 @@ An intelligent crop recommendation system that analyzes soil data and provides t
 - HTML/CSS (for frontend)
 - Pandas, NumPy
 
-## 📦 Installation
+## 📦 Installation & Execution 
 ```bash
 pip install -r requirements.txt
-
-##Execution
 ```bash
 python app.py
 index.html(open with live server)
