@@ -32,6 +32,15 @@ jobs:
       - name: Generate Training Blog
         run: |
           python scripts/generate_training_blog.py
+
+      - name: Commit training report
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add blogs/training_report.md
+          git commit -m "Auto update training report" || echo "No changes to commit"
+          git push
       
       - name: Upload trained model
         uses: actions/upload-artifact@v4
