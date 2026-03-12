@@ -8,6 +8,7 @@ permalink: /:categories/:year/:month/:day/:title/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 author:
   name: varunrajet
