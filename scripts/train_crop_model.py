@@ -3,7 +3,7 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 import os
 
-data = pd.read_csv("CROP-RECOMMENDATION--based-on-soil-metrics-with-DISEASE-DETECTION\Updated_Crop_Recommendation_with_Disease_Info.csv")
+data = pd.read_csv("Updated_Crop_Recommendation_with_Disease_Info.csv")
 
 print("Dataset columns:", data.columns)
 
