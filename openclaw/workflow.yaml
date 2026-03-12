@@ -1,0 +1,12 @@
+name: agriculture-ai-pipeline
+
+steps:
+
+  - name: train_model
+    run: python scripts/train_crop_model.py
+
+  - name: generate_blog
+    run: python scripts/generate_training_blog.py
+
+  - name: monitor_model
+    run: python scripts/openclaw_monitor.py
