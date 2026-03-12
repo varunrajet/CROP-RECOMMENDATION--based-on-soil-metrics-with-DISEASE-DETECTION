@@ -5,6 +5,9 @@ on:
     branches:
       - automation-pipeline
 
+permissions:
+  contents: write
+
 jobs:
   train-model:
     runs-on: ubuntu-latest
