@@ -7,7 +7,7 @@ seaborn
 opencv-python
 Pillow
 keras
-joblib
 requests
 gunicorn
 tqdm
+joblib
