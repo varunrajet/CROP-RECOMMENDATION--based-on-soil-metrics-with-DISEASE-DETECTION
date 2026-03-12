@@ -1,0 +1,13 @@
+Flask
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+opencv-python
+Pillow
+keras
+joblib
+requests
+gunicorn
+tqdm
