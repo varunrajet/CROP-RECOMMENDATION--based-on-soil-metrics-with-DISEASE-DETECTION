@@ -1,6 +1,7 @@
 Flask
 numpy
 pandas
+joblib
 scikit-learn
 matplotlib
 seaborn
@@ -10,4 +11,3 @@ keras
 requests
 gunicorn
 tqdm
-joblib
