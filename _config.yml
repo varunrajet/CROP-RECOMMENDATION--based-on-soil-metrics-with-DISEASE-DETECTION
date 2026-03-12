@@ -1,0 +1,25 @@
+title: "CropSense Dev Blog"
+description: "Technical changelog and dev diary for the Crop Recommendation + Disease Detection project"
+baseurl: "/CROP-RECOMMENDATION--based-on-soil-metrics-with-DISEASE-DETECTION"
+url: "https://varunrajet.github.io"
+theme: minima
+permalink: /:categories/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+author:
+  name: varunrajet
+  email: ""
+
+markdown: kramdown
+highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: varunrajet
