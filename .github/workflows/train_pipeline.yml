@@ -1,0 +1,38 @@
+name: Agriculture AI OpenClaw Pipeline
+
+on:
+  push:
+    branches:
+      - automation-pipeline
+
+permissions:
+  contents: write
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Generate blog from repo changes
+        run: |
+          python openclaw/blog_agent.py
+
+      - name: Commit generated blog
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add blogs/
+          git commit -m "Auto blog generated from repo activity" || echo "No changes"
+          git push
